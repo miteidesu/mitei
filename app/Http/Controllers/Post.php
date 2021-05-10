@@ -14,9 +14,7 @@ class Post extends Controller
         $id = time() + rand(1000,9999);
         $file = $request->file('file');
 
-        echo $id;
-
-        #$file->storeAs('',$id);
+        $file->storeAs('',$id);
 
         return view('true');
     }
